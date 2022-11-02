@@ -1,0 +1,105 @@
+body {
+    background: linear-gradient(rgb(30, 30, 30), rgb(20, 20, 20));
+    margin: 0;
+    overflow: hidden;
+}
+
+#taskArea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5% auto auto;
+    width: 90%;
+    height: 50vh;
+    padding: 10px;
+    border-radius: 5vh;
+    -webkit-border-radius: 5vh;
+    -moz-border-radius: 5vh;
+    background: rgb(26, 26, 26);
+    color: white;
+    font-size: 4vh;
+}
+
+#navigation {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    box-sizing: border-box;
+}
+
+button {
+    border-radius: 5vh;
+    -webkit-border-radius: 5vh;
+    -moz-border-radius: 5vh;
+    background: linear-gradient(rgba(54, 59, 217, 0.709),  rgb(50, 56, 202));
+    width: 40%;
+    height: 20%;
+    font-size: 4vh;
+    box-shadow: 0 2vh 3vh rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: rgb(61, 67, 239);
+    font-size: 5vh;
+}
+
+#truth {
+    margin-top: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0.3vh solid green;
+}
+
+#dare {
+    margin-top: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0.3vh solid red;
+}
+
+#truth:hover,
+#dare:hover {
+    cursor: pointer;
+    border-width: 0.5vh;
+}
+
+.shadow {
+    position: relative;
+    margin: 200px auto 0;
+    border-radius: 5vh;
+    -webkit-border-radius: 5vh;
+    -moz-border-radius: 5vh;
+}
+.shadow:before,
+.shadow:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background: linear-gradient(45deg,#fb0094,#0000ff,#00ff00,#ffff00,#ff0000,#fb0094,#0000ff,#00ff00,#ffff00,#ff0000);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: animate 20s linear infinite;
+    border-radius: 5vh;
+    -webkit-border-radius: 5vh;
+    -moz-border-radius: 5vh;
+}
+.shadow:after {
+    filter: blur(20px);
+    border-radius: 5vh;
+    -webkit-border-radius: 5vh;
+    -moz-border-radius: 5vh;
+}
+@keyframes animate {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 300% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}

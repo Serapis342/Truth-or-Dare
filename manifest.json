@@ -1,0 +1,17 @@
+{
+    "name": "Truth or Dare",
+    "short_name": "T or D",
+    "start_url": ".",
+    "icons": [
+        {
+            "src": "icons/logo.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable any"
+        }
+    ],
+    "theme_color": "#000000",
+    "background_color": "#FFFFFF",
+    "display": "fullscreen",
+    "orientation": "portrait"
+}
